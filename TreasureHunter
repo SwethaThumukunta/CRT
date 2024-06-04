@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,a,b,Ben,Bb,P;
+    scanf("%d%d%d%d%d",&n,&a,&b,&Ben,&Bb);
+    Ben=n*a/100;
+    n=n-Ben;
+    Bb=n*b/100;
+    n=n-Bb;
+    P=n/3;
+    printf("%d\n",Ben);
+    printf("%d\n",Bb);
+    printf("%d\n",P);
+        return 0;
+}
