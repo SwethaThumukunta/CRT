@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,tk=0,digit;
+    int position=1;
+    scanf("%d",&n);
+    while(n>0){
+        digit=n%10;
+        if(digit%2==0){
+            digit=(digit+1);
+        }else{
+            digit=(digit-1);
+        }
+        tk+=digit*position;
+        position*=10;
+        n/=10;
+    }
+    printf("%d\n",tk);
+    
+    return 0;
+}
